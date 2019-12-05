@@ -1,0 +1,18 @@
+<ion-header>
+  <app-encabezadoc [tituloPagina]="nombrePagina"></app-encabezadoc>
+</ion-header>
+
+<ion-content>
+
+    <ion-card *ngIf="datos">
+        <img [src]="datos.avatar" />
+        <ion-card-header>
+          <ion-card-subtitle id="nombre"> {{datos.first_name}} </ion-card-subtitle>
+          <ion-card-title id="nombre">{{datos.last_name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{datos.email}}
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>
